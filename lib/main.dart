@@ -60,6 +60,14 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin  
     super.initState();
   }
 
+  @override
+  void dispose(){
+    scoreInAnimationController.dispose();
+    scoreOutAnimationController.dispose();
+    scoreSizeAnimationController.dispose();
+    super.dispose();
+  }
+
   void setUpScoreSizeAnimationController() {
     scoreSizeAnimationController = new AnimationController(vsync: this, duration: new Duration(milliseconds: 150));
     scoreSizeAnimationController.addStatusListener((status) {
