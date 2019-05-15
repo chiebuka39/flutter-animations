@@ -83,7 +83,11 @@ class _DragPageState extends State<DragPage> with SingleTickerProviderStateMixin
   }
 
   void _handleVerticalEnd(DragEndDetails details) {
-
+    if(_controller.value >= 0.5){
+      _controller.forward();
+    }else{
+      _controller.reverse();
+    }
   }
 
   void _handleVerticalUpdate(DragUpdateDetails details) {
