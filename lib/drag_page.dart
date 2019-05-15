@@ -1,5 +1,6 @@
 import 'package:animations/app_bottom_bar.dart';
 import 'package:animations/bottom_bar.dart';
+import 'package:animations/profile_page_view.dart';
 import 'package:flutter/material.dart';
 
 class DragPage extends StatefulWidget {
@@ -49,7 +50,7 @@ class _DragPageState extends State<DragPage> with SingleTickerProviderStateMixin
         FractionallySizedBox(
           alignment: Alignment.topCenter,
           heightFactor: _heightFactorAnimation.value,
-          child: Image.asset('assets/messi.jpg', fit: BoxFit.cover,colorBlendMode: BlendMode.hue,color: Colors.black,),
+          child: ProfilePageView() ,
         ),
         GestureDetector(
           onTap: onBottomTapPart,
