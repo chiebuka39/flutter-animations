@@ -1,5 +1,6 @@
 
 
+import 'package:animations/animated_bottom_bar.dart';
 import 'package:animations/drag_page.dart';
 import 'package:animations/home_page.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget  {
         
         primarySwatch: Colors.blue,
       ),
-      home: DragPage(),
+      home: AnimatedBottomBarExample(),
     );
   }
 }

@@ -45,6 +45,8 @@ flutter:
 #    - images/messi.jpg
   assets:
     - messi.jpg
+    - ronaldo.jpg
+    - salah.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
